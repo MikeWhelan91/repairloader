@@ -20,7 +20,8 @@
       "Bash(cat:*)",
       "Bash(nul)",
       "Bash(npx shadcn@latest add:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(node -e:*)"
     ],
     "deny": [],
     "ask": []
