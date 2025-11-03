@@ -3,8 +3,8 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RepairLoader - Coming Soon",
-  description: "RepairLoader.net is currently under construction. Check back soon!",
+  title: "RepairLoader - Fix Tech Problems, Share Solutions",
+  description: "Free diagnostic tools, expert community, and step-by-step guides to solve Windows, Mac, and Linux issues.",
   icons: {
     icon: '/icon.svg',
   },
