@@ -21,7 +21,8 @@
       "Bash(nul)",
       "Bash(npx shadcn@latest add:*)",
       "Bash(npm run build:*)",
-      "Bash(node -e:*)"
+      "Bash(node -e:*)",
+      "Bash(npm run db:push:*)"
     ],
     "deny": [],
     "ask": []
