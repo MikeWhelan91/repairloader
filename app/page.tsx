@@ -27,22 +27,22 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-white dark:bg-slate-950">
       {/* Header */}
-      <header className="border-b bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b bg-white dark:bg-slate-900 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Wrench className="w-6 h-6 text-primary" />
-            <span className="font-bold text-xl">RepairLoader</span>
+            <span className="font-bold text-xl text-foreground">RepairLoader</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/tools" className="text-sm hover:text-primary transition-colors">
+            <Link href="/tools" className="text-sm text-foreground hover:text-primary transition-colors">
               Tools
             </Link>
-            <Link href="/forum" className="text-sm hover:text-primary transition-colors">
+            <Link href="/forum" className="text-sm text-foreground hover:text-primary transition-colors">
               Forum
             </Link>
-            <Link href="/guides" className="text-sm hover:text-primary transition-colors">
+            <Link href="/guides" className="text-sm text-foreground hover:text-primary transition-colors">
               Guides
             </Link>
           </nav>
@@ -58,17 +58,17 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="container mx-auto px-4 py-20 text-center">
+      <section className="container mx-auto px-4 py-20 text-center bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-950 dark:to-slate-900">
         <Badge variant="secondary" className="mb-4">
           <Zap className="w-3 h-3 mr-1" />
           Beta Launch
         </Badge>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900 dark:text-white">
           Fix Tech Problems.
           <br />
-          Share Solutions.
+          <span className="text-primary">Share Solutions.</span>
         </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
           Free diagnostic tools, expert community, and step-by-step guides to solve Windows, Mac, and Linux issues.
         </p>
         <div className="flex items-center justify-center gap-4">
@@ -88,9 +88,9 @@ export default function Home() {
       </section>
 
       {/* Featured Tools */}
-      <section className="container mx-auto px-4 pb-20">
+      <section className="container mx-auto px-4 py-20 bg-white dark:bg-slate-950">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-3">Popular Diagnostic Tools</h2>
+          <h2 className="text-3xl font-bold mb-3 text-foreground">Popular Diagnostic Tools</h2>
           <p className="text-muted-foreground">
             Run instantly in your browser. No installation required.
           </p>
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-white dark:bg-slate-900 py-8">
+      <footer className="border-t bg-slate-50 dark:bg-slate-900 py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} RepairLoader. Open-source tech repair platform.</p>
         </div>
