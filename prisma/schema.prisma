@@ -26,6 +26,7 @@ model User {
   emailVerified DateTime?
   name          String?
   handle        String?   @unique
+  password      String?   // For credentials login (OAuth users won't have this)
   image         String?
   role          Role      @default(USER)
   createdAt     DateTime  @default(now())
